@@ -5,7 +5,7 @@ const Nav = ({ userName, setUserName }) => {
   return (
     <nav className="nav">
       <nav className="logo">
-        <a href="/">
+        <a href="/github-repolist">
           <img
             src="/github-repolist/images/icons8-github.svg"
             alt="GitHubLogo"
