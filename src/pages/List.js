@@ -18,10 +18,16 @@ const List = ({ listData, setListData, userName, setUserName }) => {
     try {
       const fetchList = await fetch(url);
       let parsedList = await fetchList.json();
+
       if (parsedList.message === "Not Found") {
         setLoading(false);
         console.log(parsedList.message);
         navigate(`/${username}/userNotFound`);
+      } else if (parsedList.length === 0) {
+        setLoading(false);
+        console.log("no more");
+        console.log(parsedList);
+        setHasmore(false);
       } else {
         setLoading(false);
         setListData(parsedList);
