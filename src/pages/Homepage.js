@@ -25,7 +25,7 @@ const Homepage = ({ userName, setUserName }) => {
               </li>
               <li>
                 <img src="/github-repolist/images/icons8-about.svg" alt="" />
-                <a href="#">About</a>
+                <a href="/github-repolist/about">About</a>
               </li>
               <li>
                 <img

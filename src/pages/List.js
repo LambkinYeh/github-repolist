@@ -92,7 +92,7 @@ const List = ({ listData, setListData, userName, setUserName }) => {
   }, [username]);
 
   useEffect(() => {
-    if (page !== 1) {
+    if (page !== 1 && hasmore) {
       setLoading(true);
       fetchMoreList(listUrl);
     }

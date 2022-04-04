@@ -1,0 +1,34 @@
+div.about{
+    background-image: url("/public/images/kelly-sikkema-dgVSuJu58C0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .intro{
+    background-color:rgba(255,255,255,0.85);
+    border-radius: 30px;
+    height: 100vw;
+    width:70% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        text-align: left;
+        padding: 10px 10px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    }
+button{
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 1.35rem;
+    cursor: pointer;
+}
+}

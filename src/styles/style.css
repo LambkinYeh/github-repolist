@@ -817,4 +817,58 @@ li {
   padding: 10px 5px;
   font-weight: 600;
 }
+
+div.about {
+  background-image: url("/public/images/kelly-sikkema-dgVSuJu58C0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.about .intro {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  height: 100vw;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 20px;
+}
+
+div.about .intro h1 {
+  font-size: 2.5rem;
+}
+
+div.about .intro p {
+  text-align: left;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+div.about button {
+  border-radius: 25px;
+  padding: 5px 10px;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
