@@ -741,9 +741,11 @@ li {
   font-weight: 600;
   text-decoration: none;
   color: black;
+  margin-left: 40px;
 }
 
 .repoData .bar div.visit img {
+  margin-right: 40px;
   width: 45px;
   height: 45px;
 }
