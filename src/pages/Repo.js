@@ -59,13 +59,15 @@ const Repo = ({ userName, setUserName }) => {
           <div className="bar">
             <div className="back">
               <p>⮰</p>
-              <Link to={`/user/${userName}/repos`}>Back to list page.</Link>
+              <Link to={`/github-repolist/user/${userName}/repos`}>
+                Back to list page.
+              </Link>
             </div>
             <div className="visit">
               <a className="visit" href={repoData.svn_url} target="_blank">
                 Visit the GitHub website.
               </a>
-              <img src="/images/icons8-click-66.png" alt="" />
+              <img src="/github-repolist/images/icons8-click-66.png" alt="" />
             </div>
           </div>
         </div>

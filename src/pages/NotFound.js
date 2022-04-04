@@ -9,7 +9,7 @@ const NotFound = () => {
         <h1 className="row2">Sorry, Can Not Find What You Want.</h1>
         <button
           onClick={() => {
-            navigate("/");
+            navigate("/github-repolist");
           }}
         >
           Back to Homepage

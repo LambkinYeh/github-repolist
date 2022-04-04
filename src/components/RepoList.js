@@ -13,7 +13,10 @@ const RepoList = ({ d, username }) => {
           </p>
           <p className="click">
             Click{" "}
-            <Link to={`/user/${username}/repos/${d.name}`} target="_self">
+            <Link
+              to={`/github-repolist/user/${username}/repos/${d.name}`}
+              target="_self"
+            >
               Me
             </Link>{" "}
             to watch more details

@@ -11,7 +11,7 @@ const UserNotFound = () => {
         <h1 className="row2">" {username} " is not a user. </h1>
         <button
           onClick={() => {
-            navigate("/");
+            navigate("/github-repolist");
           }}
         >
           Back to Homepage

@@ -16,11 +16,11 @@ function App() {
       {/* <Nav userName={userName} setUserName={setUserName} /> */}
       <Routes>
         <Route
-          path={`/`}
+          path={`/github-repolist`}
           element={<Homepage userName={userName} setUserName={setUserName} />}
         />
         <Route
-          path={`/user/:username/repos`}
+          path={`/github-repolist/user/:username/repos`}
           element={
             <List
               listData={listData}
@@ -31,10 +31,13 @@ function App() {
           }
         />
         <Route
-          path={`/user/:username/repos/:repo`}
+          path={`/github-repolist/user/:username/repos/:repo`}
           element={<Repo userName={userName} setUserName={setUserName} />}
         />
-        <Route path={`/:username/userNotFound`} element={<UserNotFound />} />
+        <Route
+          path={`/github-repolist/:username/userNotFound`}
+          element={<UserNotFound />}
+        />
         <Route path={`*`} element={<NotFound />} />
       </Routes>
     </div>

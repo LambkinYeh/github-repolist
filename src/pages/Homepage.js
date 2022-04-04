@@ -10,23 +10,34 @@ const Homepage = ({ userName, setUserName }) => {
         <div className="filter">
           <nav className="nav">
             <nav className="logo">
-              <a href="/">
-                <img src="/images/icons8-github.svg" alt="GitHubLogo" />
+              <a href="/github-repolist">
+                <img
+                  src="/github-repolist/images/icons8-github.svg"
+                  alt="GitHubLogo"
+                />
               </a>
               <h1>GitHub Repository</h1>
             </nav>
             <ul>
               <li>
-                <img src="/images/icons8-home.svg" alt="" />
-                <a href="/">Homepage</a>
+                <img src="/github-repolist/images/icons8-home.svg" alt="" />
+                <a href="/github-repolist">Homepage</a>
               </li>
               <li>
-                <img src="/images/icons8-about.svg" alt="" />
+                <img src="/github-repolist/images/icons8-about.svg" alt="" />
                 <a href="#">About</a>
               </li>
               <li>
-                <img src="/images/icons8-repository-50.png" alt="" />
-                <a href="#">GitHub</a>
+                <img
+                  src="/github-repolist/images/icons8-repository-50.png"
+                  alt=""
+                />
+                <a
+                  href="https://github.com/LambkinYeh/github-repolist"
+                  target="_blank"
+                >
+                  GitHub
+                </a>
               </li>
             </ul>
           </nav>

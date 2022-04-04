@@ -7,7 +7,7 @@ const Search = ({ userName, setUserName }) => {
   const handleKeypress = (e) => {
     //it triggers by pressing the enter key
     if (e.charCode === 13) {
-      navigate(`/user/${userName}/repos`);
+      navigate(`/github-repolist/user/${userName}/repos`);
     }
   };
 
@@ -25,8 +25,11 @@ const Search = ({ userName, setUserName }) => {
         type="text"
       />
 
-      <Link to={`/user/${userName}/repos`}>
-        <img src="/images/icons8-magnifier-66.png" alt="放大鏡" />
+      <Link to={`/github-repolist/user/${userName}/repos`}>
+        <img
+          src="/github-repolist/images/icons8-magnifier-66.png"
+          alt="放大鏡"
+        />
       </Link>
     </div>
   );
