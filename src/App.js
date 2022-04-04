@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import List from "./pages/List";
+import style from "./styles/style.css";
+import Repo from "./pages/Repo";
+import NotFound from "./pages/NotFound";
+import UserNotFound from "./pages/UserNotFound";
 
 function App() {
+  let [userName, setUserName] = useState("");
+  let [listData, setListData] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Nav userName={userName} setUserName={setUserName} /> */}
+      <Routes>
+        <Route
+          path={`/`}
+          element={<Homepage userName={userName} setUserName={setUserName} />}
+        />
+        <Route
+          path={`/user/:username/repos`}
+          element={
+            <List
+              listData={listData}
+              setListData={setListData}
+              userName={userName}
+              setUserName={setUserName}
+            />
+          }
+        />
+        <Route
+          path={`/user/:username/repos/:repo`}
+          element={<Repo userName={userName} setUserName={setUserName} />}
+        />
+        <Route path={`/:username/userNotFound`} element={<UserNotFound />} />
+        <Route path={`*`} element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
