@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/github-repolist/static/css/main.da725867.css",
+    "main.css": "/github-repolist/static/css/main.75944818.css",
     "main.js": "/github-repolist/static/js/main.d28a75ab.js",
     "static/media/alfons-morales-YLSwjSy7stw-unsplash.jpg": "/github-repolist/static/media/alfons-morales-YLSwjSy7stw-unsplash.4257a2232ff44540e7ce.jpg",
     "static/media/jaredd-craig-HH4WBGNyltc-unsplash.jpg": "/github-repolist/static/media/jaredd-craig-HH4WBGNyltc-unsplash.2f57aebc674e9f89a5b5.jpg",
     "static/media/sharon-mccutcheon-tn57JI3CewI-unsplash.jpg": "/github-repolist/static/media/sharon-mccutcheon-tn57JI3CewI-unsplash.6d61d52216caf2a09cf3.jpg",
     "static/media/praveen-thirumurugan-KPAQpJYzH0Y-unsplash.jpg": "/github-repolist/static/media/praveen-thirumurugan-KPAQpJYzH0Y-unsplash.fc00dd94795cfb076d17.jpg",
     "index.html": "/github-repolist/index.html",
-    "main.da725867.css.map": "/github-repolist/static/css/main.da725867.css.map",
+    "main.75944818.css.map": "/github-repolist/static/css/main.75944818.css.map",
     "main.d28a75ab.js.map": "/github-repolist/static/js/main.d28a75ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.da725867.css",
+    "static/css/main.75944818.css",
     "static/js/main.d28a75ab.js"
   ]
 }
