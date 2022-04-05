@@ -79,9 +79,11 @@ const List = ({ listData, setListData, userName, setUserName }) => {
       window.innerHeight + e.target.documentElement.scrollTop + 1 >=
       e.target.documentElement.scrollHeight
     ) {
-      if (hasmore) {
+      setLoading(true);
+      setTimeout(() => {
         setPage((oldpage) => oldpage + 1);
-      }
+        setLoading(false);
+      }, 1000);
     }
   };
 
@@ -106,6 +108,7 @@ const List = ({ listData, setListData, userName, setUserName }) => {
 
   useEffect(() => {
     setPage(1);
+    setLoading(true);
     setHasmore(true);
     window.scrollTo(0, 0);
     fetchListHeadler(listUrl);
