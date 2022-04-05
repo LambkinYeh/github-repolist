@@ -3,9 +3,9 @@
 A website for searching github user and their repositories.
 
 # 環境建置與要求
-react:18.0.0 <br>
-react-router-dom:6.2.2 <br>
-uuid:8.3.2 
+#react:18.0.0 <br>
+#react-router-dom:6.2.2 <br>
+#uuid:8.3.2 
 
 # 使用方法
 
